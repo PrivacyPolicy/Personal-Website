@@ -1,0 +1,119 @@
+.container {
+  position: relative;
+  width: 80%;
+  padding-bottom: 45%;
+  background-size: auto 100%;
+  display: block;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+
+  opacity: 1;
+  transition: opacity .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.blurred {
+  filter: blur(25px);
+}
+
+.content {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 10%;
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+
+  opacity: 0;
+  transition: opacity .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.container:hover > .image:not(.blurred) {
+  opacity: 0;
+}
+
+.container:hover > .content {
+  opacity: 1;
+}
+
+.container h1 {
+  margin: 5%;
+  font-size: 40px;
+}
+
+.description {
+  font-size: 1.8vw;
+  font-style: italic;
+}
+
+.techIcon {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  border: .5px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+
+  transition: background-color .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bottom {
+  bottom: 0;
+  position: absolute;
+  width: 80%;
+  padding-bottom: 5%;
+}
+
+@media screen and (min-width: 2400px) {
+  .container {
+    width: 1920px;
+    height: 1080px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+  .content {
+    opacity: 1;
+  }
+
+  .button {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .image:not(.blurred) {
+    opacity: 0;
+  }
+
+  .content {
+    opacity: 1;
+  }
+}
