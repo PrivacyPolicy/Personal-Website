@@ -41,7 +41,7 @@ export default function Project(props) {
       <div className="image blurred" style={ containerStyle }></div>
       <div className="image" style={ containerStyle }></div>
       <div className="content">
-        <div>
+        <div className="top">
           <h1>{ props.title }</h1>
           <p className="description">{ props.description }</p>
         </div>

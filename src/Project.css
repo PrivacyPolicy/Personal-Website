@@ -26,16 +26,19 @@
 }
 
 .content {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   text-align: center;
   padding: 0 10%;
   position: absolute;
-  height: 100%;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   opacity: 0;
   transition: opacity .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
@@ -55,7 +58,7 @@
 }
 
 .description {
-  font-size: 1.8vw;
+  /* font-size: 1.8vw; */
   font-style: italic;
 }
 
@@ -81,9 +84,6 @@
 }
 
 .bottom {
-  bottom: 0;
-  position: absolute;
-  width: 80%;
   padding-bottom: 5%;
 }
 
@@ -98,15 +98,25 @@
 @media screen and (max-width: 800px) {
   .container {
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 0;
   }
 
   .content {
     opacity: 1;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
   }
 
   .button {
     background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .image {
+    background-size: cover;
+    background-position: center center;
   }
 
   .image:not(.blurred) {
