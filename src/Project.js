@@ -1,18 +1,9 @@
 import React from 'react';
 import './Project.css';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import TechnologyIcon from './TechnologyIcon';
 
 function toFaIcons(techIcons) {
-  if (techIcons === null || techIcons === undefined) return null;
-  return (
-    <div>
-      {
-        techIcons.map((techIcon, i) => {
-          return <FontAwesomeIcon className="techIcon" key={i} icon={techIcon} />;
-        })
-      }
-    </div>
-  );
+  return <TechnologyIcon technologies={techIcons} />;
 }
 
 function demoButton(link) {
