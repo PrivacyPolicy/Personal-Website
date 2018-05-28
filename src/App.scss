@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'constants.scss';
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f5f5f5;
+  background: $color-background;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,10 +21,10 @@ section {
 }
 
 section:nth-child(2n) {
-  background: #FDD;
+  background: $color-background-alt;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile-width) {
   section {
     height: auto;
     padding: 100px 0;

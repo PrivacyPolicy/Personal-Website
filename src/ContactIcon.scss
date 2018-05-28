@@ -1,6 +1,8 @@
+@import 'constants.scss';
+
 a.scale-up-center {
   display: inline-block;
-  transition: .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  transition: $transition;
 }
 
 a.scale-up-center:hover {
@@ -11,4 +13,5 @@ a.scale-up-center:hover {
   font-size: 50px;
   line-height: 50px;
   margin: auto 20px;
+  color: $color-contact-icon;
 }

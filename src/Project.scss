@@ -1,3 +1,5 @@
+@import 'constants.scss';
+
 .container {
   position: relative;
   width: 80%;
@@ -18,7 +20,7 @@
   background-size: 100% 100%;
 
   opacity: 1;
-  transition: opacity .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  transition: opacity $transition;
 }
 
 .blurred {
@@ -26,7 +28,6 @@
 }
 
 .content {
-  /* box-sizing: border-box; */
   text-align: center;
   padding: 0 10%;
   position: absolute;
@@ -34,14 +35,14 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  background-color: $color-project-background;
+  color: $color-project-text;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 
   opacity: 0;
-  transition: opacity .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  transition: opacity $transition;
 }
 
 .container:hover > .image:not(.blurred) {
@@ -58,7 +59,6 @@
 }
 
 .description {
-  /* font-size: 1.8vw; */
   font-style: italic;
 }
 
@@ -76,18 +76,18 @@
   color: white;
   text-decoration: none;
 
-  transition: background-color .4s cubic-bezier(0.075, 0.820, 0.165, 1.000);
+  transition: background-color $transition;
 }
 
 .button:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: $color-project-button;
 }
 
 .bottom {
   padding-bottom: 5%;
 }
 
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: $max-scale-width) {
   .container {
     width: 1920px;
     height: 1080px;
@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: $mobile-width) {
   .container {
     width: 100%;
     padding-bottom: 0;
@@ -111,7 +111,7 @@
   }
 
   .button {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: $color-project-button;
   }
 
   .image {
