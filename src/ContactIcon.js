@@ -1,5 +1,5 @@
 import React from 'react';
-// import './ContactIcon.css';
+import './ContactIcon.css';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 export default function ContactIcon(props) {

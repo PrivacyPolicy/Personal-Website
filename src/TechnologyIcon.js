@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 export default function TechnologyIcon(props) {
@@ -10,8 +10,8 @@ export default function TechnologyIcon(props) {
         techIcons.map((techIcon, i) => {
           const {icon, title} = techIcon;
           return (
-            <span title={title}>
-              <FontAwesomeIcon className="techIcon" key={i} icon={icon} />
+            <span title={title} key={i}>
+              <FontAwesomeIcon className="techIcon" icon={icon} />
             </span>
           );
         })
