@@ -78,8 +78,8 @@ class App extends Component {
                         sint occaecat cupidatat non proident, sunt in culpa qui
                         officia deserunt mollit anim id est laborum."
             technologies={[javaIcon, androidIcon]}
-            demoLink="a"
             codeLink="b"
+            infoLink="c"
             image="https://i.ytimg.com/vi/OfIQW6s1-ew/maxresdefault.jpg" />
         </section>
       </div>

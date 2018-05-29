@@ -14,6 +14,10 @@ function codeButton(link) {
   return button("Code", link);
 }
 
+function infoButton(link) {
+  return button("More Info", link);
+}
+
 function button(text, link) {
   if (link === null || link === undefined || link === "") return null;
   return (
@@ -41,6 +45,7 @@ export default function Project(props) {
           <br />
           { demoButton(props.demoLink) }
           { codeButton(props.codeLink) }
+          { infoButton(props.infoLink) }
         </div>
       </div>
     </div>
