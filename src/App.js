@@ -17,7 +17,7 @@ class App extends Component {
           <CenteredTable>
             <div>
               <img src={profile} style={{borderRadius: "50%", width: 300}} alt="My Chiseled Face"></img>
-              <h2>Hi, I'm Gabriel Hutchison</h2>
+              <h2>Hi, I'm <span className="name">Gabriel Hutchison</span></h2>
               <h3>Full-Stack Developer | Web Nerd</h3>
               <div>
                 <ContactIcon href="https://github.com/" title="GitHub" icon={ faGithubSquare } />
@@ -37,8 +37,8 @@ class App extends Component {
           </CenteredTable>
         </section>
 
-        <section style={{display: 'block'}}>
-          <h1>Projects</h1>
+        <section className="projects">
+          <h1 className="title">Projects</h1>
           <Project
             title="Cool Cool"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -82,6 +82,9 @@ class App extends Component {
             infoLink="c"
             image="https://i.ytimg.com/vi/OfIQW6s1-ew/maxresdefault.jpg" />
         </section>
+        <footer>
+          Created with React.js by Gabriel Hutchison
+        </footer>
       </div>
     );
   }
