@@ -15,3 +15,23 @@ a.scale-up-center:hover {
   margin: auto 20px;
   color: $color-contact-icon;
 }
+
+.contact-icon-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+
+  opacity: 0;
+  transform: translate(-50%, 90%);
+  transition: $transition;
+}
+
+.contact-icon-container:hover > .tooltip {
+  opacity: 1;
+  transform: translate(-50%, 150%);
+}

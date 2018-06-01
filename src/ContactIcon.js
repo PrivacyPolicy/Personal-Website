@@ -4,8 +4,13 @@ import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 export default function ContactIcon(props) {
   return (
-    <a href={props.href} target="_blank" className="scale-up-center" title={props.title}>
-      <FontAwesomeIcon icon={props.icon} className="contact-icon" />
-    </a>
+    <div className="contact-icon-container">
+      <a href={props.href} target="_blank" className="scale-up-center">
+        <FontAwesomeIcon icon={props.icon} className="contact-icon" />
+      </a>
+      <div className="tooltip">
+        {props.title || ""}
+      </div>
+    </div>
   );
 }

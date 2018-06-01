@@ -18,12 +18,12 @@ class App extends Component {
             <div>
               <img src={profile} style={{borderRadius: "50%", width: 300}} alt="My Chiseled Face"></img>
               <h2>Hi, I'm <span className="name">Gabriel Hutchison</span></h2>
-              <h3>Full-Stack Developer | Web Nerd</h3>
+              <h3>Full-Stack Developer | Web Nerd | Non-Stop Creator</h3>
               <div>
-                <ContactIcon href="https://github.com/" title="GitHub" icon={ faGithubSquare } />
-                <ContactIcon href="https://github.com/" title="LinkedIn" icon={ faLinkedin } />
-                <ContactIcon href="https://github.com/" title="Email" icon={ faEnvelope } />
-                <ContactIcon href="https://github.com/" title="Resume" icon={ faFile } />
+                <ContactIcon href="https://www.github.com/PrivacyPolicy/" title="GitHub" icon={ faGithubSquare } />
+                <ContactIcon href="https://www.linkedin.com/in/gabriel-hutchison/" title="LinkedIn" icon={ faLinkedin } />
+                <ContactIcon href="mailto:gabehwebsites@gmail.com" title="gabehwebsites@gmail.com" icon={ faEnvelope } />
+                <ContactIcon href="http://www.gabeh.info/resume/" title="Resume" icon={ faFile } />
               </div>
             </div>
           </CenteredTable>
