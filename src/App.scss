@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Monda|Montserrat:500');
 @import 'constants.scss';
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: $color-background;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
+  font-family: 'Monda', sans-serif;
 }
 
-.name {
+h2.name {
+  font-size: 30px;
+  line-height: 0;
+}
+
+h2.name > span {
   color: $color-name;
 }
 
