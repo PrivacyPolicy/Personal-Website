@@ -9,6 +9,8 @@ import CenteredTable from './CenteredTable.js';
 import Project from './Project.js';
 import { javaIcon, androidIcon, pythonIcon, htmlIcon, cssIcon, jsIcon, phpIcon,
   iosIcon, nodeIcon, ubuntuIcon, reactIcon } from './tech-icons';
+import ScrollAnimation from 'react-animate-on-scroll';
+import './animations.css';
 
 class App extends Component {
   render() {
@@ -16,7 +18,7 @@ class App extends Component {
       <div className="App">
         <section>
           <CenteredTable>
-            <div>
+            <ScrollAnimation animateIn="fade-in-bottom" animateOnce="true">
               <img src={profile} style={{borderRadius: "50%", width: 300}} alt="My Chiseled Face"></img>
               <h2 className="name">Hi, I'm <span>Gabriel Hutchison</span></h2>
               <h3>Full-Stack Developer | Non-Stop Creator</h3>
@@ -26,7 +28,7 @@ class App extends Component {
                 <ContactIcon href="mailto:gabehwebsites@gmail.com" title="GabeHwebsites@gmail.com" icon={ faEnvelope } />
                 <ContactIcon href="http://www.gabeh.info/resume/Gabriel%20Hutchison%27s%20Resume.pdf" title="Resume" icon={ faFile } />
               </div>
-            </div>
+            </ScrollAnimation>
           </CenteredTable>
         </section>
 
@@ -69,7 +71,7 @@ class App extends Component {
             codeLink="https://github.com/Brent-Kuhn/Dat_Whip"
             image="http://www.gabeh.info/projects/autonomous-vehicle.jpg" />
           <Project
-            title="Class Schedule Generator Web App"
+            title="Class Schedule Generator"
             description="A web app to generate a list of all possible
               course selections that match a student's requirements. The course data
               was scraped from the school's website with a Python scraper."
