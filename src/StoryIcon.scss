@@ -22,3 +22,10 @@
   margin: 10px auto;
   color: $color-story-icon;
 }
+
+@media screen and (max-width: $mobile-width) {
+  .storyIcon {
+    height: auto;
+    flex-basis: auto;
+  }
+}
