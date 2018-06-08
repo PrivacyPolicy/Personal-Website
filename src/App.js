@@ -37,8 +37,9 @@ class App extends Component {
             <StoryIcon icon={ faBook } content="
               It all started when I grabbed a book on HTML4 back in 2012.
               I made a few websites in my spare time, and I just never stopped
-              creating. One AWS internship later, and I've solidified my
-              love of software engineering.
+              creating. One B.S. from Florida Polytechnic University and one
+              AWS internship later, and I've solidified my love of software
+              engineering.
               " />
             <StoryIcon icon={ faDesktop } content="
               I code tons of random applications — sometimes desktop and mobile
