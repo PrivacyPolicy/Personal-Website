@@ -65,6 +65,14 @@ class App extends Component {
             codeLink="https://github.com/PrivacyPolicy/PolyHacks-com"
             image="http://www.gabeh.info/projects/polyhacks.png" />
           <Project
+            title="smartTicket: Ticket Tracking System"
+            description="My junior design project. A web app that tracks tickets
+              submitted via the web app or via email, and presents the tickets
+              to the helpdesk users."
+            technologies={[nodeIcon, htmlIcon, cssIcon, jsIcon]}
+            codeLink="https://github.com/criggs626/smartTicket"
+            image="http://www.gabeh.info/projects/tickets.png" />
+          <Project
             title="Autonomous Vehicle"
             description="A 1/10-scale, level 3 autonomous vehicle based on MIT RACECAR for
               my Autonomous Vehicles class."
