@@ -65,6 +65,16 @@ class App extends Component {
             codeLink="https://github.com/PrivacyPolicy/PolyHacks-com"
             image="http://www.gabeh.info/projects/polyhacks.png" />
           <Project
+            title="Florida Poly Tutoring Schedule"
+            description="My school didn't have a system to provide information
+              about tutor availability; I created this web app in response,
+              which was adopted by the university. It graphically shows schedule
+              information."
+            technologies={[htmlIcon, cssIcon, jsIcon, phpIcon]}
+            demoLink="http://www.gabeh.info/projects/tutoring-schedule/"
+            codeLink="https://github.com/PrivacyPolicy/Tutoring-Schedule"
+            image="http://www.gabeh.info/projects/tutoring.png" />
+          <Project
             title="smartTicket: Ticket Tracking System"
             description="My junior design project. A web app that tracks tickets
               submitted via the web app or via email, and presents the tickets
