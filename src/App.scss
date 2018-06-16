@@ -38,6 +38,14 @@ footer {
   color: white;
 }
 
+footer > a {
+  color: white;
+}
+
+footer > a:hover {
+  text-decoration: underline;
+}
+
 section {
   display: flex;
   height: 100vh;

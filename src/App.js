@@ -99,7 +99,9 @@ class App extends Component {
             image="http://www.gabeh.info/projects/schedule.png" />
         </section>
         <footer>
-          Created with React.js by Gabriel Hutchison
+          <a href="https://github.com/PrivacyPolicy/Personal-Website" target="_blank">
+            Created with React.js by Gabriel Hutchison
+          </a>
         </footer>
       </div>
     );
