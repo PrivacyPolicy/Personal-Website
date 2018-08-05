@@ -61,7 +61,6 @@ class App extends Component {
               hackathon: PolyHacks. I was a dev team member for SHAPE, the
               school's hackathon club."
             technologies={[htmlIcon, cssIcon, jsIcon, phpIcon, iosIcon]}
-            demoLink="http://www.polyhacks.com"
             codeLink="https://github.com/PrivacyPolicy/PolyHacks-com"
             image="http://www.gabeh.info/projects/polyhacks.png" />
           <Project
