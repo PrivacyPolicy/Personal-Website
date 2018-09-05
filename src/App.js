@@ -26,7 +26,7 @@ class App extends Component {
                 <ContactIcon href="https://www.github.com/PrivacyPolicy/" title="GitHub" icon={ faGithubSquare } />
                 <ContactIcon href="https://www.linkedin.com/in/gabriel-hutchison/" title="LinkedIn" icon={ faLinkedin } />
                 <ContactIcon href="mailto:gabehwebsites@gmail.com" title="GabeHwebsites@gmail.com" icon={ faEnvelope } />
-                <ContactIcon href="http://www.gabeh.info/resume/Gabriel%20Hutchison%27s%20Resume.pdf" title="Resume" icon={ faFile } />
+                <ContactIcon href="https://www.gabeh.info/resume/Gabriel%20Hutchison%27s%20Resume.pdf" title="Resume" icon={ faFile } />
               </div>
             </ScrollAnimation>
           </CenteredTable>
@@ -62,7 +62,7 @@ class App extends Component {
               school's hackathon club."
             technologies={[htmlIcon, cssIcon, jsIcon, phpIcon, iosIcon]}
             codeLink="https://github.com/PrivacyPolicy/PolyHacks-com"
-            image="http://www.gabeh.info/projects/polyhacks.png" />
+            image="https://www.gabeh.info/projects/polyhacks.png" />
           <Project
             title="Florida Poly Tutoring Schedule"
             description="My school didn't have a system to provide information
@@ -70,9 +70,9 @@ class App extends Component {
               which was adopted by the university. It graphically shows schedule
               information."
             technologies={[htmlIcon, cssIcon, jsIcon, phpIcon]}
-            demoLink="http://www.gabeh.info/projects/tutoring-schedule/"
+            demoLink="https://www.gabeh.info/projects/tutoring-schedule/"
             codeLink="https://github.com/PrivacyPolicy/Tutoring-Schedule"
-            image="http://www.gabeh.info/projects/tutoring.png" />
+            image="https://www.gabeh.info/projects/tutoring.png" />
           <Project
             title="smartTicket: Ticket Tracking System"
             description="My junior design project. A web app that tracks tickets
@@ -80,14 +80,14 @@ class App extends Component {
               to the helpdesk users."
             technologies={[nodeIcon, htmlIcon, cssIcon, jsIcon]}
             codeLink="https://github.com/criggs626/smartTicket"
-            image="http://www.gabeh.info/projects/tickets.png" />
+            image="https://www.gabeh.info/projects/tickets.png" />
           <Project
             title="Autonomous Vehicle"
             description="A 1/10-scale, level 3 autonomous vehicle based on MIT RACECAR for
               my Autonomous Vehicles class."
             technologies={[pythonIcon, ubuntuIcon]}
             codeLink="https://github.com/Brent-Kuhn/Dat_Whip"
-            image="http://www.gabeh.info/projects/autonomous-vehicle.jpg" />
+            image="https://www.gabeh.info/projects/autonomous-vehicle.jpg" />
           <Project
             title="Class Schedule Generator"
             description="A web app to generate a list of all possible
@@ -95,7 +95,7 @@ class App extends Component {
               was scraped from the school's website with a Python scraper."
             technologies={[htmlIcon, cssIcon, jsIcon, pythonIcon]}
             codeLink="https://github.com/PrivacyPolicy/FloridaPolyScheduleGenerator"
-            image="http://www.gabeh.info/projects/schedule.png" />
+            image="https://www.gabeh.info/projects/schedule.png" />
         </section>
         <footer>
           <a href="https://github.com/PrivacyPolicy/Personal-Website" target="_blank">
