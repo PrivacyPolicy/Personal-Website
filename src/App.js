@@ -127,7 +127,6 @@ class App extends Component {
               which was adopted by the university. It graphically shows schedule
               information."
             technologies={[htmlIcon, cssIcon, jsIcon, phpIcon]}
-            demoLink="https://www.gabeh.info/projects/tutoring-schedule/"
             codeLink="https://github.com/PrivacyPolicy/Tutoring-Schedule"
             image={'./projects/tutoring.png'}
           />
